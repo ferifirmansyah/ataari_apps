@@ -1,0 +1,14 @@
+{
+  "name": "mang_maung_api",
+  "version": "1.0",
+  "globalDevDependencies": {
+    "express": "registry:dt/express#4.0.0+20160218233549",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#0.0.0+20160218233549",
+    "node": "registry:dt/node#4.0.0+20160311162451",
+    "form-data": "registry:dt/form-data#0.0.0+20160316155526",
+    "mime": "registry:dt/mime#0.0.0+20160316155526",
+    "request": "registry:dt/request#0.0.0+20160311134650",
+    "require": "github:DefinitelyTyped/DefinitelyTyped/requirejs/require.d.ts#0423c27df4caeffc6f05f04d26e694646e854c3d",
+    "serve-static": "registry:dt/serve-static#0.0.0+20160218233549"
+  }
+}

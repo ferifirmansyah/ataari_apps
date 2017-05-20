@@ -1,0 +1,10 @@
+debug
+prd
+*.cmd
+*.map
+*.log
+api/newrelic_agent.log
+api/node_modules
+api/typings
+node_modules
+typings
