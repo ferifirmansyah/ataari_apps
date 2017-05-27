@@ -27,6 +27,11 @@ export class SequelizeService {
 					dbPassword = process.env[mongoServiceName + '_PASSWORD'],
 					dbUserName = process.env[mongoServiceName + '_USER'];
 				}
+
+				console.log("mongoServiceName:"+mongoServiceName);
+				console.log("dbHost:"+dbHost);
+				console.log("dbPort:"+dbPort);
+				console.log("dbName:"+dbName);
 			}
 			else {
 				dbName = vConfig.db.name;

@@ -17,6 +17,10 @@ class SequelizeService {
                 if (postgresURL == null && main_1.process.env.DATABASE_SERVICE_NAME) {
                     var mongoServiceName = main_1.process.env.DATABASE_SERVICE_NAME.toUpperCase(), dbHost = main_1.process.env[mongoServiceName + '_SERVICE_HOST'], dbPort = main_1.process.env[mongoServiceName + '_SERVICE_PORT'], dbName = main_1.process.env[mongoServiceName + '_DATABASE'], dbPassword = main_1.process.env[mongoServiceName + '_PASSWORD'], dbUserName = main_1.process.env[mongoServiceName + '_USER'];
                 }
+                console.log("mongoServiceName:" + mongoServiceName);
+                console.log("dbHost:" + dbHost);
+                console.log("dbPort:" + dbPort);
+                console.log("dbName:" + dbName);
             }
             else {
                 dbName = vConfig.db.name;
