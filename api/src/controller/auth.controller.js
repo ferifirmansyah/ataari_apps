@@ -21,7 +21,7 @@ class AuthController {
     }
     test(pRequest, pResponse) {
         return __awaiter(this, void 0, void 0, function* () {
-            pResponse.status(200).send("test success");
+            pResponse.status(200).send("test success coy");
         });
     }
     login(pRequest, pResponse) {

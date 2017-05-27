@@ -32,7 +32,7 @@ export class AuthController implements AuthControllerInterface {
     }
 
     async test(pRequest: any, pResponse: any): Promise<void> {
-        pResponse.status(200).send("test success");
+        pResponse.status(200).send("test success coy");
     }
     async login(pRequest: any, pResponse: any): Promise<void> {
         Logging('calling login function: Start..');
