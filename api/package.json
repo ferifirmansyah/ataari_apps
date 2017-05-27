@@ -5,8 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "compile": "tsc && node src/main.js",
-    "start_tsc": "nodemon -e ts,json  --exec \"npm run compile\"",
-    "start":"node src/main.js"
+    "start": "nodemon -e ts,json  --exec \"npm run compile\""
   },
   "dependencies": {
     "aws-sdk": "^2.26.0",
