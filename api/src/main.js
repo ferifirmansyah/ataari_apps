@@ -12,7 +12,7 @@ var bodyParser = require('body-parser');
 var vValidator = require('validator');
 const app = express();
 const router = express.Router();
-const port = exports.process.env.OPENSHIFT_NODEJS_PORT || exports.config.port || 4000;
+const port = exports.process.env.OPENSHIFT_NODEJS_PORT || 4000;
 const ip = exports.process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 let seq = new sequelize_service_1.SequelizeService();
 let allow;
