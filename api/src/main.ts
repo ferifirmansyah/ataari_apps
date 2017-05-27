@@ -1,7 +1,7 @@
 'use strict';
 declare var require:any;
 declare var __dirname:any;
-var process = require('process');
+export var process = require('process');
 var vPath = require("path");
 export var vEnv = process.env.NODE_ENV || require(vPath.join(__dirname, 'config', 'mode.json'))['mode'];
 export var config = require(vPath.join(__dirname, 'config', 'config.json'))[vEnv];
