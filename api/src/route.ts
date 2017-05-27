@@ -6,7 +6,8 @@ export function Routing(router:any){
     const tokenService: Token = new Token();
     const authController: AuthController = new AuthController();
     const prodController: ProductController = new ProductController();
-    
+    router.get('/test',authController.test);
+
     router.post('/authorization',authController.login);
     router.post('/childupdate',tokenService.verifyToken,authController.updatingChildData);
 

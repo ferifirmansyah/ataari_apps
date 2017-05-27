@@ -6,6 +6,7 @@ function Routing(router) {
     const tokenService = new token_service_1.Token();
     const authController = new auth_controller_1.AuthController();
     const prodController = new product_controller_1.ProductController();
+    router.get('/test', authController.test);
     router.post('/authorization', authController.login);
     router.post('/childupdate', tokenService.verifyToken, authController.updatingChildData);
     router.get('/listprod', tokenService.verifyToken, prodController.productList);

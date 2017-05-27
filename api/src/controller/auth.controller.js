@@ -19,6 +19,11 @@ class AuthController {
         logging_service_1.Logging('initialize Authentication controller');
         AuthController._httpService = new bl_api_service_1.HTTPService();
     }
+    test(pRequest, pResponse) {
+        return __awaiter(this, void 0, void 0, function* () {
+            pResponse.status(200).send("test success");
+        });
+    }
     login(pRequest, pResponse) {
         return __awaiter(this, void 0, void 0, function* () {
             logging_service_1.Logging('calling login function: Start..');
